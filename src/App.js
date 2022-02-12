@@ -1,9 +1,15 @@
 import './App.css';
+import Header from'./Header';
+// import LeftNavBar from './LeftNavBar';
+// import Main from './Main';
+
 
 function App() {
   return (
     <div>
-      원아관리페이지
+      <Header />
+      {/* <LeftNavBar />
+      <Main /> */}
     </div>
   );
 }

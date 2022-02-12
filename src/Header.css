@@ -1,0 +1,45 @@
+.Nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top:0;
+    width: 100%;
+    box-shadow: 2px 2px 10px lightgrey;
+    z-index: 999;
+}
+
+.navWrap{
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    width: 50px;
+    margin: 5px;
+}
+
+.logoText{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navRightWrap {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.kidsMenu{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.noticBell{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user{
+    color: grey;
+    cursor: pointer;
+}
