@@ -5,24 +5,27 @@ import { BiHomeHeart} from 'react-icons/bi';
 import { MdEventNote } from 'react-icons/md';
 import { BsCalendarCheck } from 'react-icons/bs';
 import './LeftNavBar.css';
-
+import { AiTwotoneSetting } from 'react-icons/ai';
+import { FaUserCircle } from 'react-icons/fa';
+import { IoMdArrowDropdown } from 'react-icons/io';
+//왼쪽네브바 아이템
 const LeftNavBarItems = [
   {
     display: '홈',
     icon: <BiHomeHeart />,
-    to: '/',
+    to: '/Main',
     section: ''
   },
   {
     display: '알림장',
     icon: <MdEventNote />,
-    to: '/',
+    to: 'Blank',
     section: ''
   },
   {
     display: '공지사항',
     icon: <BsCalendarCheck />,
-    to: '/',
+    to: '/Notice',
     section: ''
   },
 ];
@@ -52,6 +55,19 @@ const LeftNavBar = () => {
 
 return(
   <div className='leftNavBar'>
+    <div className='navUser'>
+      <span className='navSetting'><AiTwotoneSetting/></span>
+      <span className='navUserImg'><FaUserCircle /></span>
+      <div className='navUserName'>교사</div>
+      <div className='navDropdown'>
+        <button className='dropDownBtn'>교사<IoMdArrowDropdown /></button>
+        <div className='navDropdown-Content'>
+          <div>원장</div>
+          <div>비담임교사</div>
+          <div>연장교사</div>
+        </div>
+      </div>
+    </div>
     <div className='navLogo'></div>
     <div ref ={sidebarRef} className ='leftNavBarMenu'>
       <div ref={sidebarRef}

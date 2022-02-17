@@ -53,3 +53,53 @@
  :link{
      text-decoration: none;
  }
+
+
+
+ .navDropdown .dropDownBtn{
+     width: 11rem;
+     cursor: pointer;
+     font-size: 20px;
+     border-style: solid;
+     border-color: lightgray;
+     border-radius: 5px;
+     background-color: whitesmoke;
+     padding: 5px;
+     margin: 0px;
+ }
+
+
+ .navDropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.navDropdown:hover  .dropDownBtn:hover {
+    background-color: lightgray;
+}
+
+.navDropdown-Content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 11rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navDropdown-Content div {
+    float: none;
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navDropdown-Content div:hover {
+    background-color: #ddd;
+  }
+  
+.show {
+    display: block;
+  }

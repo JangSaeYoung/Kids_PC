@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillBell } from 'react-icons/ai';
 import {FaUserCircle} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -9,7 +10,8 @@ return(
   <nav className="Nav">
     <div className="navWrap">
        <img className="logoImg" alt='logo img' src='img/kidsLogo.png' />
-       <span className='logoText'>Yes어린이집</span>
+       <Link to="./Main"><span className='logoText'>Yes어린이집</span></Link>
+        
     </div>
     <div className='navRightWrap'>
         <span className='kidsMenu'>알림장</span>
